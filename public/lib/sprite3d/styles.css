@@ -1,0 +1,30 @@
+div {
+	perspective: 800px;
+    perspective-origin: 0% 100px;	
+}
+
+ul {
+ 	position: relative;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+
+li {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    transition all 2s;
+}
+
+li.current {
+
+}
+
+li.prev {
+	transform: rotateY(-90deg);
+}
+
+li.next {
+	transform: rotateY(90deg);
+}
